@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConsult - Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ffffff, #e6e6e6);
+            color: #000;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid #000;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            margin-right: 10px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #A32753;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('landing-background.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            color: #000;
+            flex-grow: 1;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn-register {
+            background: #A32753;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-register:hover {
+            background: #801E40;
+        }
+        
+        .features {
+            text-align: center;
+            padding: 50px;
+            flex-grow: 2;
+        }
+        
+        .features h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #A32753;
+        }
+        
+        .features ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        
+        .features li {
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logouniten.png" alt="Logo" width="50" height="50">
+            <span>EduConsult</span>
+        </div>
+        <nav>
+            <a href="landing.html">Home</a>
+            <a href="login.html">Schedule Appointment</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to EduConsult!</h1>
+        <p>Your trusted platform for educational consultation.</p>
+        <a href="login.html">
+        <button class="btn-register">Get Started</button></a>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose EduConsult?</h2>
+        <ul>
+            <li>📅 Easy Appointment Scheduling</li>
+            <li>📊 Track Your Advisory History</li>
+            <li>🔒 Secure and User-Friendly</li>
+        </ul>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EduConsult. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
